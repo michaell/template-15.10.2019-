@@ -1,0 +1,131 @@
+/*-----------------------------screen resolutions----------------------------*/
+$phone-portrait: 320px;
+$phone-landscape: 480px;
+
+$tablet-small: 600px;
+$tablet-portrait: 768px;
+$tablet-landscape: 980px;
+
+$desctop: 1200px;
+$desctop-big: 1400px;
+
+
+/*---------------------breakpoints--------------------*/
+@mixin max {
+	@media (min-width: 1401px) {
+      @content;
+   }
+}
+
+
+@mixin desctop-big {
+	@media (max-width: $desctop-big) {           //1400px
+      @content;
+   }
+}
+// 981-1200px
+@mixin desctop {
+	@media (max-width: $desctop) {              //1200px
+      @content;
+   }
+}
+  
+//769-980px
+@mixin tablet-landscape {
+	@media (max-width: $tablet-landscape) {     //980px
+      @content;
+	}
+}
+
+// 601-768px
+@mixin tablet-portrait {
+	@media (max-width: $tablet-portrait) {      //768px
+      @content;
+	}
+}
+
+// 481-600px
+@mixin tablet-small {
+	@media (max-width: $tablet-small) {        //600px
+      @content;
+	}
+}
+  
+  //321-480
+@mixin phone-landscape {
+	@media (max-width: $phone-landscape) {     //480px
+      @content; 
+	}
+}
+
+// untill 320px
+@mixin phone-portrait {
+	@media (max-width: $phone-portrait) {      //320px
+      @content; 
+	}
+}
+
+.container {
+	@include max {
+		width: 1300px;
+	}
+	@include desctop-big {                //1400px
+		width: 1150px;
+	}
+	@include desctop {                   //1200px
+		width: 970px;
+	}
+	@include tablet-landscape {           //980px
+		width: 750px;
+	}
+	@include tablet-portrait {           //768px
+		width: 550px;
+	}
+	@include tablet-small {              //600px
+		width: 450px;
+	}
+	@include phone-landscape {            //480px
+		width: 90%;
+	}
+	@include phone-portrait {             //320px
+		width: 95%;
+	}
+}
+
+// Резиновый контейнер
+// .container {	
+// 	@include desctop-big {
+// 		width: 1170px;
+// 	}
+// 	@include desctop {
+// 		width: 85%;
+// 	}
+// 	@include phone-landscape {
+// 		width: 90%;
+// 	}
+// 	@include phone-portrait {
+// 		width: 95%;
+// 	}
+// }
+
+
+html {
+	@include desctop {
+		font-size: 16px;
+	}
+	@include tablet-landscape {
+		font-size: 15px;
+	}
+	@include tablet-portrait {
+		font-size: 15px;
+	}
+	@include tablet-small {
+		font-size: 14px;
+	}
+	@include phone-landscape {
+		font-size: 13px;
+	}
+	@include phone-portrait {
+		font-size: 13px;
+	}
+}

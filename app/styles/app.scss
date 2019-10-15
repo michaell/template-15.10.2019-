@@ -1,0 +1,24 @@
+/*-----------------------------helpers----------------------------*/
+@import "helpers/mixins";
+@import "helpers/variables";
+
+/*-----------------------------responsive----------------------------*/
+@import "responsive/responsive.scss";
+
+/*-----------------------------elements----------------------------*/
+@import 'elements/buttons';
+@import 'elements/forms';
+@import 'elements/texts';
+
+/*-----------------------------fonts----------------------------*/
+@import "fonts/fonts";
+
+/*-----------------------------layout----------------------------*/
+@import "layout/layout";
+
+/*-----------------------------pages----------------------------*/
+@import "pages/index";
+
+/*-----------------------------common----------------------------*/
+@import "common/footer";
+@import "common/header";

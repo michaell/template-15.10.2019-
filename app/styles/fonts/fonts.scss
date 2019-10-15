@@ -1,0 +1,60 @@
+// thin - 100; light - 300; regular - 400; semi-bold - 600; bold - 700; extra-bold - 800;
+// Стек форматов для максимальной совместимости: .eot, .woff2, .woff, .ttf. Для современных сайтов брать только .woff2 и .woff.
+// генерация шрифтов: https://www.fontsquirrel.com/tools/webfont-generator
+
+/**************************************** Web fonts ****************************************/
+
+/*---------------------Alegreya--------------------*/
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,700');
+
+/*---------------------Playfair Display--------------------*/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700');
+
+
+/**************************************** Site fonts ****************************************/
+/*---------------------Scriptina--------------------*/
+@font-face {
+	font-family: 'Scriptina';
+	src: url('../fonts/Scriptina/Scriptina.eot'); // для IE 9 работающего в режиме совместимости с IE 8
+	src: url('../fonts/Scriptina/Scriptina.eot?#iefix') format('embedded-opentype'), // для IE 6-8
+		url('../fonts/Scriptina/Scriptina.woff2') format('woff2'), // самые современные браузеры
+		url('../fonts/Scriptina/Scriptina.woff') format('woff'), // для IE 9 и большинства современных браузеров
+		url('../fonts/Scriptina/Scriptina.ttf') format('truetype'); // iOS и Android
+		//  url('../fonts/Scriptina/Scriptina.svg#svgFontName') format('svg'); // древние iOS устройства
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*---------------------Proxima--------------------*/
+@font-face {
+	font-family: 'Proxima';
+	src: url('../fonts/ProximaNovaRegular/ProximaNovaRegular.eot'); 
+	src: url('../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/ProximaNovaRegular/ProximaNovaRegular.woff2') format('woff2'),
+		url('../fonts/ProximaNovaRegular/ProximaNovaRegular.woff') format('woff'),
+		url('../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf') format('truetype');	
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima';
+	src: url('../fonts/ProximaNovaBold/ProximaNovaBold.eot');
+	src: url('../fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNovaBold/ProximaNovaBold.woff2') format('woff2'),
+		url('../fonts/ProximaNovaBold/ProximaNovaBold.woff') format('woff'),
+		url('../fonts/ProximaNovaBold/ProximaNovaBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima';
+	src: url('../fonts/ProximaNovaLight/ProximaNovaLight.eot');
+	src: url('../fonts/ProximaNovaLight/ProximaNovaLight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNovaLight/ProximaNovaLight.woff2') format('woff2'),
+		url('../fonts/ProximaNovaLight/ProximaNovaLight.woff') format('woff'),
+		url('../fonts/ProximaNovaLight/ProximaNovaLight.ttf') format('truetype');	
+	font-weight: 300;
+	font-style: normal;
+}
