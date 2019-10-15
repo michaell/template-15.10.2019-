@@ -124,7 +124,7 @@ function scripts(){
 		}))
 		.pipe(gulpIf(isDevelopment, sourcemaps.init()))
 		.pipe(concat('main.min.js'))
-		.pipe(uglify())
+		// .pipe(uglify())
 		.pipe(gulpIf(isDevelopment, sourcemaps.write())) //write sourcemaps in dev mode
 		.pipe(gulp.dest(paths.scripts.dest))
 		.pipe(browserSync.stream());
